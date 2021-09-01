@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="btn-grp">
+      <button onclick="easy()">Easy</button>
+      <button onclick="medium()">Medium</button>
+      <button onclick="hard()">Hard</button>
+    </div>
+    <div class="Sudoku-1">
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="1"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-u b-l"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="2"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-u"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="3"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-u b-r"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="4"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-u"
+        />>
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="5"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-u"
+        />>
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="6"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-u b-r"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="7"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-u"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="8"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-u"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="9"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-u b-r"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="10"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-l"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="11"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class=""
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="12"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-r"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="13"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class=""
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="14"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class=""
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="15"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-r"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="16"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class=""
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="17"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class=""
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="18"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-r"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="19"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-l b-b"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="20"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-b"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="21"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-r b-b"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="22"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-b"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="23"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-b"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="24"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-r b-b"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="25"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-b"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="26"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-b"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="27"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-r b-b"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="28"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-l"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="29"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class=""
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="30"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-r"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="31"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class=""
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="32"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class=""
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="33"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-r"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="34"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class=""
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="35"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class=""
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="36"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-r"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="37"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-l"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="38"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class=""
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="39"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-r"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="40"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class=""
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="41"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class=""
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="42"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-r"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="43"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class=""
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="44"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class=""
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="45"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-r"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="46"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-l"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="47"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class=""
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="48"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-r"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="49"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class=""
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="50"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class=""
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="51"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-r"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="52"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class=""
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="53"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class=""
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="54"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-r"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="55"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-l b-u"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="56"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-u"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="57"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-r b-u"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="58"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-u"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="59"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-u"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="60"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-r b-u"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="61"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-u"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="62"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-u"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="63"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-r b-u"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="64"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-l"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="65"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class=""
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="66"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-r"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="67"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class=""
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="68"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class=""
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="69"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-r"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="70"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class=""
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="71"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class=""
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="72"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-r"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="73"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-l b-b"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="74"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-b"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="75"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-b b-r"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="76"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-b"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="77"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-b"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="78"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-b b-r"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="79"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-b"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="80"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-b"
+        />
+      </div>
+      <div class="Sudoku-3">
+        <input
+          maxlength="1"
+          id="81"
+          onfocusin="highlight(id)"
+          onfocusout="unhighlight(id)"
+          oninput="input(id)"
+          class="b-r b-b"
+        />
+      </div>
+    </div>
+    <button class="validate" onClick="validate()">Validate</button>
+    <script src="./index.js"></script>
+  </body>
+</html>

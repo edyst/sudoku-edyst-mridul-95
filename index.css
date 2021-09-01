@@ -1,0 +1,63 @@
+* {
+  place-content: center;
+  box-sizing: border-box;
+  margin: 0px;
+  text-align: center;
+  font-family: Source Sans Pro, sans-serif;
+  font-size: 25px;
+  font-weight: 1000;
+  color: black;
+}
+.btn-grp {
+  background-color: white;
+}
+.btn-grp button {
+  margin: 20px 70px;
+  padding: 10px;
+}
+.Sudoku-1 {
+  display: grid;
+  grid-template-columns: repeat(9, 60px);
+  grid-template-rows: repeat(9, 60px);
+  border-collapse: collapse;
+}
+.Sudoku-3 {
+  border: 1px solid #bec6d4;
+}
+.Sudoku-3 input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+.validate {
+  padding: 10px;
+  margin: 10px;
+}
+.cell-fixed {
+  background-color: #e8e8e8;
+}
+.cell-notfixed:hover {
+  background-color: #5f9ea0;
+}
+.b-l {
+  border-left: 3px solid #344861 !important;
+}
+.b-u {
+  border-top: 3px solid #344861 !important;
+}
+.b-b {
+  border-bottom: 3px solid #344861 !important;
+}
+.b-r {
+  border-right: 3px solid #344861 !important;
+}
+.cell-highlight {
+  background-color: #89cff0;
+}
+.cell-input {
+  background-color: #6495ed;
+}
+.cell-valid {
+  background-color: #7df9ff;
+}
