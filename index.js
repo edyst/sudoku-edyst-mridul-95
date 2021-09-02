@@ -23,14 +23,16 @@ function setValue(){
   document.getElementById(c).value=ar[i][j];
   document.getElementById(c).classList.add("cell-fixed");
   document.getElementById(c).disabled=true;
+  document.getElementById(c).classList.remove("cell-valid");
+  document.getElementById(c).classList.remove("cell-input");
       }
       else{
         document.getElementById(c).value="";
         document.getElementById(c).classList.remove("cell-fixed");
         document.getElementById(c).disabled=false;
-          document.getElementById(c).classList.add("cell-notfixed");
-          document.getElementById(c).classList.remove('cell-error');
-              document.getElementById(c).classList.remove('cell-error');
+           //   highlightDigit(c);
+           document.getElementById(c).classList.remove("cell-valid");
+  document.getElementById(c).classList.remove("cell-input");
       }
   c++;
   }
